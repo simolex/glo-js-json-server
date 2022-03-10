@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "name": "Mark",
+      "email": "otto@gmail.com",
+      "children": true,
+      "permissions": false
+    },
+    {
+      "id": 1,
+      "name": "Jacob",
+      "email": "thornton@gmail.com",
+      "children": false,
+      "permissions": true
+    },
+    {
+      "name": "Jora",
+      "email": "w@w",
+      "children": true,
+      "permissions": false,
+      "id": 2
+    },
+    {
+      "name": "fed",
+      "email": "w@3r",
+      "children": false,
+      "permissions": false,
+      "id": 3
+    },
+    {
+      "name": "Joraq",
+      "email": "w@w34",
+      "children": true,
+      "permissions": false,
+      "id": 4
+    }
+  ]
+}
