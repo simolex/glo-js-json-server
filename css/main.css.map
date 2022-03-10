@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,8EAAI,CACZ,OAAO,CAAC,kFAAI,CCDZ,AAAA,OAAO,AAAC,CACJ,WAAW,CAAE,IAAI,CACjB,cAAc,CAAE,IAAI,CACvB,AAED,AAAA,EAAE,AAAC,CACC,SAAS,CAAE,KAAK,CACnB",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/templates/_interface.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

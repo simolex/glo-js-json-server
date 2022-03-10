@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./dist/main.js" defer></script>
+    <title>JSON-server</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">JSON-Server</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-lg-4 col-md-6 col-sm-8 offset-0 offset-lg-4 offset-md-3 offset-sm-2">
+                        <form>
+                            <div class="mb-3">
+                                <label for="form-name" class="form-label">Имя</label>
+                                <input type="text" class="form-control" id="form-name" required aria-describedby="emailHelp">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="form-email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="form-email" required>
+                            </div>
+
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" role="switch" id="form-children">
+                                <label class="form-check-label" for="form-children">Есть ли дети?</label>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-success" type="submit">Сохранить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-table">
+            <div class="container">
+                <div class="row mb-3 d-flex justify-content-between">
+                    <div class="col col-12 col-lg-4 col-md-6 mb-3 mb-lg-0">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="search-input-group">
+                                <i class="bi-search"></i>
+                            </span>
+                            <input 
+                            type="text" 
+                            class="form-control" 
+                            placeholder="Поиск" 
+                            aria-label="Поиск" 
+                            id="search-input"
+                            aria-describedby="search-input-group">
+                          </div>
+                    </div>
+                    <div class="col col-12 col-lg-4 col-md-6 d-flex justify-content-end">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-info" id="btn-isChildren">С детьми</button>
+                            <button type="button" class="btn btn-info" id="btn-isPermissions">С доступом</button>
+                            <button type="button" class="btn btn-info" id="btn-isAll">Все</button>
+                          </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Имя</th>
+                                <th scope="col">Email</th>
+                                <th scope="col" id="sort-is-children">Наличие детей</th>
+                                <th scope="col">Доступ</th>
+                                <th scope="col">Действия</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>otto@gmail.com</td>
+                                <td>Есть</td>
+                                <td>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="form-children">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-warning">
+                                            <i class="bi-pencil-square"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-danger">
+                                            <i class="bi-person-x"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>thornton@gmail.com</td>
+                                <td>Есть</td>
+                                <td>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="form-children"
+                                            checked>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-warning">
+                                            <i class="bi-pencil-square"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-danger">
+                                            <i class="bi-person-x"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
