@@ -5,7 +5,7 @@ export const render = (users) => {
     tBody.insertAdjacentHTML(
       "beforeend",
       `
-      <tr>
+      <tr data-key = ${user.id}>
           <th scope="row">${user.id}</th>
           <td>${user.name}</td>
           <td>${user.email}</td>
@@ -18,10 +18,10 @@ export const render = (users) => {
           </td>
           <td>
               <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-warning">
+                  <button type="button" class="btn btn-warning btn-edit">
                       <i class="bi-pencil-square"></i>
                   </button>
-                  <button type="button" class="btn btn-danger">
+                  <button type="button" class="btn btn-danger btn-remove">
                       <i class="bi-person-x"></i>
                   </button>
               </div>
