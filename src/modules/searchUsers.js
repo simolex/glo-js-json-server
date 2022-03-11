@@ -9,6 +9,5 @@ export const searchUsers = () => {
       render(users);
     });
   });
-
   searchInput.addEventListener("input", debounceSearch);
 };

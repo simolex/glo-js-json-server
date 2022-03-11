@@ -8,7 +8,7 @@ import { sortUsers } from "./modules/sortUsers";
 import { searchUsers } from "./modules/searchUsers";
 import { UserService } from "./modules/userService";
 
-window.userService = new UserService();
+window.userService = new UserService("http://localhost:4545");
 
 userService.getUsers().then((data) => {
   render(data);

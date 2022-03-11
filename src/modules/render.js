@@ -1,10 +1,11 @@
 export const render = (users) => {
   const tBody = document.getElementById("table-body");
   tBody.innerHTML = "";
-  users.forEach((user) => {
-    tBody.insertAdjacentHTML(
-      "beforeend",
-      `
+  users &&
+    users.forEach((user) => {
+      tBody.insertAdjacentHTML(
+        "beforeend",
+        `
       <tr data-key = ${user.id}>
           <th scope="row">${user.id}</th>
           <td>${user.name}</td>
@@ -28,6 +29,6 @@ export const render = (users) => {
           </td>
       </tr>
     `
-    );
-  });
+      );
+    });
 };

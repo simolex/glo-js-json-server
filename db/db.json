@@ -8,18 +8,11 @@
       "permissions": true
     },
     {
-      "name": "Jora",
-      "email": "w@w",
+      "name": "Maikl",
+      "email": "m@gde.com",
       "children": true,
       "permissions": false,
-      "id": 3
-    },
-    {
-      "name": "fed",
-      "email": "w@3r88",
-      "children": false,
-      "permissions": false,
-      "id": 4
+      "id": 5
     }
   ]
 }
