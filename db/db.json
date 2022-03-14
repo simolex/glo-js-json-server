@@ -13,6 +13,13 @@
       "children": true,
       "permissions": false,
       "id": 5
+    },
+    {
+      "name": "Genry",
+      "email": "get@server.live",
+      "children": false,
+      "permissions": true,
+      "id": 6
     }
   ]
 }
